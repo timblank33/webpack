@@ -1,0 +1,127 @@
+.about__read {
+    display: none;
+}
+
+.about {
+    padding: 16px 0;
+    padding-top: 24px;
+    background-color: $background-fon;
+
+    @media (min-width: 768px) {
+        padding: 32px 24px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 1120px) {
+        padding: 19px 34px;
+        padding-right: 28px;
+        padding-bottom: 51px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        box-sizing: border-box;
+        padding: 0 16px;
+        max-height: 90px;
+        overflow: hidden;
+        transition: all .5s;
+
+        @media (min-width: 768px) {
+            max-height: 160px;
+            padding: 0;
+            margin-right: 48px;
+        }
+        
+        @media (min-width: 1120px) {
+            margin-right: 36px;
+        }
+    
+        &--font{
+            font-family: "TT Lakes Regular";
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: $black-text;
+
+            @media (min-width: 768px) {
+                line-height: 20px;
+            }
+        }
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        
+        @media (min-width: 768px) {
+            max-width: 50%;
+        }
+    }
+    &__more {
+        display: flex;
+        padding: 0 16px;
+        padding-top: 16px;
+        margin: 0;
+
+        @media (min-width: 768px) {
+            padding: 0;
+            padding-top: 10px;
+        }
+
+        &--font{
+            font-family: 'TT Lakes Regular';
+            font-weight: 700;
+            padding-left:5px;
+            white-space: nowrap ;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        padding: 24px 0;
+        padding-top: 16px;
+        
+        @media (min-width: 768px) {
+            padding: 0;
+            width: 50%;
+        }
+        @media (min-width: 1120px) {
+
+        }
+    
+        &--mask {
+            position: relative;
+            width: 320px;
+            height: 176px;
+            overflow: hidden;
+    
+            @media (min-width: 768px) {
+                border-radius: 6px;
+                width: 100%;
+                height: 208px;
+            }
+
+            @media (min-width: 768px) {
+                border-radius: 6px;
+                width: 100%;
+                height: 308px;
+            }
+    
+        }
+    
+        &--img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: auto;
+
+            @media (min-width: 768px) {
+                border-radius: 6px;
+
+            }
+        }
+    }
+}

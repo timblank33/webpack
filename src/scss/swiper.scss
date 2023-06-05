@@ -1,0 +1,35 @@
+.swiper {
+    &--brand {
+        max-width: 256px;
+    }
+
+    &--various {
+        max-width: 256px;
+    }
+
+    &--price {
+        max-width: 276px;
+    }
+}
+
+.swiper-pagination {
+    position: relative;
+    text-align: center;
+
+    &--brand {
+        top: 16px !important;
+    }
+
+    &--various {
+        top: 16px !important;
+    }
+
+    &--price {
+        top: 16px !important;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}

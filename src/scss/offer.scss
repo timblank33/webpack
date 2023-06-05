@@ -1,0 +1,45 @@
+.offer {
+    margin: 16px;
+    margin-bottom: 0;
+    padding-bottom: 44px;
+
+    @media (min-width: 768px) {
+        margin: 24px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 47px;
+    }
+
+    @media (min-width: 1120px) {
+        margin: 32px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }
+
+    &__text {
+        font-family: "TT Lakes Regular";
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: .2px;
+    }
+
+    &__btn {
+        font-family: "TT Lakes Medium";
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -.2px;
+        cursor: pointer;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            background: url('./img/Line.svg');
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            width: 1em;
+            height: 1em;
+            vertical-align: middle;
+        }
+    }
+}

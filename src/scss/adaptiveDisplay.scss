@@ -1,0 +1,33 @@
+.mobile--display {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.tablet--display {
+    display: none;
+    
+    @media (min-width:768px) {
+        display: flex;
+    }
+}
+
+.mobile-tablet--dislpay {
+    @media (min-width: 1120px) {
+        display: none;
+    }
+}
+
+.desktop--display{
+    display: none;
+
+    @media (min-width: 1120px) {
+        display: flex;
+    }
+}
+.desktop--margin {
+    @media (min-width: 1120px) {
+        transition: .5s;
+        margin-left: 306px;
+    }
+}

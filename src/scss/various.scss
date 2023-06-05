@@ -1,0 +1,35 @@
+.various {
+    overflow: hidden;
+
+    &__child {
+        background-color: $background-white;
+        height: 158px;
+        margin-right: 16px;
+        border-radius: 6px;
+        display: flex;
+        flex: 0 0 238spx;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid $border-color;
+    }
+
+    &__text {
+        font-family: "TT Lakes Medium";
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -.2px;
+        padding: 16px;
+        align-self: flex-start
+    }
+
+    &__img {
+        padding: 16px;
+        align-self: flex-end;
+    }
+
+    &__block-gradient--opacity {
+        @include gradient-opacity;
+        height: 160px;
+    }
+    
+}

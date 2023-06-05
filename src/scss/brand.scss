@@ -1,0 +1,41 @@
+.brand {
+    overflow: hidden;
+    
+    &__logo-block {
+        background-color: $background-white;
+        height: 70px;
+        margin-right: 16px;
+        border-radius: 6px;
+        display: flex;
+        flex: 0 0 238px;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid $border-color;
+
+        @media (min-width: 768px) {
+            min-width: 222px;
+            margin: 0;
+        }
+
+        @media (min-width: 1120px) {
+            min-width: 238px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__logo-block-img {
+        margin-left: 16px;
+    }
+
+    &__logo-block-arrow {
+        margin-right: 16px;
+    }
+
+    &__block-gradient--opacity {
+        @include gradient-opacity;
+        height: 72px;
+    }
+}
