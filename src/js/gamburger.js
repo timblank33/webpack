@@ -6,10 +6,12 @@ const gamburgerBtn = document.querySelector('.gamburger-img');
 const gamburgerMenu = document.querySelector('.gamburger');
 const gamburgerClose = document.querySelector('.gamburger__nav-close');
 const blur = document.querySelector('.blur-body--left');
+const scrollHeight = window.innerWidth - document.documentElement.clientWidth;
 
 gamburgerBtn.addEventListener('click', () => {
   gamburgerMenu.style.left = '0';
   html.style.overflowY = 'hidden';
+  html.style.marginRight = `${scrollHeight}px`;
   if (window.innerWidth >= 768) {
     blur.style.zIndex = '5';
     blur.style.opacity = '.96';
@@ -19,6 +21,7 @@ gamburgerBtn.addEventListener('click', () => {
 const close = () => {
   gamburgerMenu.style.left = '-120%';
   html.style.overflowY = 'visible';
+  html.style.marginRight = '0';
   if (window.innerWidth >= 768) {
     blur.style.zIndex = '-1';
     blur.style.opacity = '0';

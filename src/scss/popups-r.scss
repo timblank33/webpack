@@ -1,4 +1,4 @@
-.feedback {
+.popups-r {
     position: fixed;
     box-sizing: border-box;
     top: 0;
@@ -29,6 +29,7 @@
 
         @media (min-width: 1120px) {
             position: absolute;
+            top: 30px;
             left: -40px - 32px;
         }
 
@@ -106,7 +107,7 @@
         }
 
         &:focus ~ label{
-            top: -8px;
+            top: -9px;
             opacity: 1;
         }
     }
@@ -115,6 +116,7 @@
         font-family: "TT Lakes Medium";
         font-size: 14px;
         line-height: 16px;
+        padding-top: 8px;
 
         & span {
             color: $btn-color;

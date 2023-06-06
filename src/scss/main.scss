@@ -1,6 +1,8 @@
 html {
     overflow-x: hidden;
+    box-sizing: border-box;
 }
+
 .blur-body {
     &--left {
         position: fixed;
@@ -42,7 +44,7 @@ html {
             transition: max-height 0.5s ease-in-out;
         }
 
-        @media (min-width: 768px) {
+        @media (min-width: 1120px) {
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             column-gap: 32px;
             row-gap: 16px;
