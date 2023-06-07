@@ -18,7 +18,7 @@ const openPopap = (btn, item, item2Close) => {
     html.style.overflowY = 'hidden';
     html.style.marginRight = `${scrollHeight}px`;
     blur.style.opacity = '.96';
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth >= 768 && window.innerWidth <= 1120) {
       blur.style.zIndex = '5';
     } else if (window.innerWidth >= 1120) {
       blur.style.zIndex = '15';
